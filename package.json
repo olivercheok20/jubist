@@ -1,5 +1,5 @@
 {
-  "name": "jubist",
+  "name": "Jubist",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -31,7 +31,7 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/oliver/jubist.git"
+    "url": "git://github.com/oliver/Jubist.git"
   },
   "author": "oliver",
   "license": "",
