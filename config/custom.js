@@ -1,3 +1,7 @@
+const keys = require('./keys');
+
+console.log(keys.mailgunDomain);
+
 /**
  * Custom configuration
  * (sails.config.custom)
@@ -51,8 +55,8 @@ module.exports.custom = {
   * (https://app.mailgun.com/app/domains)                                   *
   *                                                                         *
   **************************************************************************/
-  // mailgunDomain: 'sandboxaa1234fake678.mailgun.org',
-  // mailgunSecret: 'key-fakeb183848139913858e8abd9a3',
+  mailgunDomain: keys.mailgunDomain,
+  mailgunSecret: keys.mailgunSecret,
   //--------------------------------------------------------------------------
   // /\  Configure these to enable support for automated emails.
   // ||  (Important for password recovery, verification, contact form, etc.)
@@ -70,7 +74,7 @@ module.exports.custom = {
 
   // Whether to require proof of email address ownership any time a new user
   // signs up, or when an existing user attempts to change their email address.
-  verifyEmailAddresses: false,
+  verifyEmailAddresses: true,
 
   /**************************************************************************
   *                                                                         *
