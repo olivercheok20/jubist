@@ -27,7 +27,7 @@ parasails.registerPage('welcome', {
     // `virtualPageSlug` is determined by the regular expression above, which
     // corresponds with `:unused?` in the server-side route for this page.
     switch (virtualPageSlug) {
-      case 'hello':
+      case 'rooms':
         this.modal = 'example';
         break;
       default:
@@ -41,7 +41,7 @@ parasails.registerPage('welcome', {
   methods: {
 
     clickOpenExampleModalButton: async function() {
-      this.goto('/welcome/hello');
+      this.goto('/welcome/rooms');
       // Or, without deep links, instead do:
       // ```
       // this.modal = 'example';
